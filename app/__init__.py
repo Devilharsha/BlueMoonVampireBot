@@ -22,8 +22,7 @@ SOFTWARE.
 """
 
 from pyrogram import Client
-from config import API_ID, API_HASH, BOT_TOKEN, SYLTOKEN
-from .utils import Sylviorus
+from config import API_ID, API_HASH, BOT_TOKEN
 from .db import LocalDb
 
 bot = Client("Sylviorus",
@@ -34,4 +33,3 @@ bot = Client("Sylviorus",
 
 
 ldb = LocalDb("reasons")
-SYL = Sylviorus(SYLTOKEN)
